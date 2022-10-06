@@ -11,40 +11,48 @@
   
   
   
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#menu-h{
+    background-color: rgb(37, 37, 39);
+}
+
+#menu-h ul {
+    max-width: 800px;
+    list-style: none;
+    padding: 0;
+}
+
+#menu-h ul li {
+    display: inline;
+}
+
+#menu-h ul li a {
+    color: #FFF;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background .4s;
+}
+
+#menu-h ul li a:hover {
+    background-color: rgb(24, 139, 233);
+}
+
+#menu-h ul li:last-child a {
+    float: right;
+    background-color: rgb(24, 139, 233);
+}
   
-  
-  
-  ul {
-margin: 5;
-padding: 5;
-background-color: #333;
-}
-li {
-float: left;
-}
-li v {
-color: white;
-text-align: center;
-padding: 5;
-}
-li v:hover:not(.active) {
-background-color: #111;
-}
-.active {
-background-color: #4CAF50;
-}
+
     
-    
-    
-    
-    div{pixel:156;
-    background:red;
-    cursor:pointer;
-     border:14px; 
-    
-    
-    
-    }
   
   
   
@@ -59,14 +67,24 @@ background-color: #4CAF50;
 <script src="script.js"></script>
 </head>
 <body>
-<div id='cssmenu'>
-<ul>
-<li><a href="#home" >Home</a></li>
-<li><a href="#about" class="active">About</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-</div> 
-  
+
+    <nav id="menu-h">
+        <ul>
+            <li>
+                <a href="https://satellasoft.com">
+                    Home
+                </a>
+            </li>
+
+            <li><a href="https://academy.satellasoft.com">Sobre</a></li>
+            
+            <li><a href="#">Quem Somos</a></li>
+            
+            <li><a href="#">Contato</a></li>
+            
+            <li><a href="#">Entrar</a></li>
+        </ul>
+    </nav>
   
   <b>OnlyDarkness<b></center>
   <a href="https://pt.wikipedia.org/wiki/LLL">click aqui</a>
